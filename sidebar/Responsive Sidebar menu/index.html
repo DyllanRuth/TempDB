@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/c/CodingLabYT-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Responsive Sidebar Menu  | MMCG </title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" type="text/css" href="/InnovationProject/dashboard/static/css/main.css">
+    <!-- Boxicons CDN Link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+        <div class="logo_name">MMCG Database</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+       <a href="#">
+        <i class='bx bx-edit-alt' ></i>
+         <span class="links_name">MMRS</span>
+       </a>
+       <span class="tooltip">MMRS</span>
+     </li>
+     <li>
+      <a href="#">
+        <i class='bx bxs-parking'></i>
+        <span class="links_name">PSS</span>
+      </a>
+      <span class="tooltip">PSS</span>
+    </li>
+     <li>
+       <a href="#">
+         <i class='bx bx-pie-chart-alt-2' ></i>
+         <span class="links_name">Analytics</span>
+       </a>
+       <span class="tooltip">Analytics</span>
+     </li>
+     <li>
+       <a href="#">
+        <i class='bx bxs-download' ></i>
+         <span class="links_name">Load</span>
+       </a>
+       <span class="tooltip">Load</span>
+     </li>
+     <li class="profile">
+         <div class="profile-details">
+           <div class="name_job">
+             <div class="name">Dyllan Ruth</div>
+             <div class="job">Procurement</div>
+           </div>
+         </div>
+         <i class='bx bx-log-out' id="log_out" ></i>
+     </li>
+    </ul>
+  </div>
+
+  </style>
+  <section class="home-section">
+      <div class="text">Dashboard</div>
+      <div class="row">
+        <div class="col">
+          <div class="col-md">
+            <div class="card text-center text-white  mb-3" id="total-orders">
+                <div class="card-header">
+                  <h5 class="card-title">Total Orders</h5>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">Null</h3>
+                </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col">
+          <div class="col-md">
+            <div class="card text-center text-white  mb-3" id="orders-delivered">
+                <div class="card-header">
+                  <h5 class="card-title">Orders Delivered</h5>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">0</h3>
+                </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col">
+          <div class="col-md">
+            <div class="card text-center text-white  mb-3" id="orders-pending">
+                <div class="card-header">
+                  <h5 class="card-title">Orders Pending</h5>
+                </div>
+                <div class="card-body">
+                  <h3 class="card-title">2</h3>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      
+      <br>
+      
+      <div class="row">
+        <div class="col-md-5">
+          <h5>NEEDS RFQ</h5>
+          <hr>
+          <div class="card card-body">
+            <table class="table table-sm">
+              <tr>
+                <th>View</th>
+                <th>MMRS ID</th>
+                <th>Status</th>
+                <th>Age</th>
+              </tr>
+                <tr>
+                  <td><a class="btn btn-sm btn-info" href="/customer/2/">View</a></td>
+                  <td>563428</td>
+                  <td>Extend</td>
+                  <td>2</td>
+                </tr>
+                <tr>
+                  <td><a class="btn btn-sm btn-info" href="/customer/4/">View</a></td>
+                  <td>563428</td>
+                  <td>Extend</td>
+                  <td>2</td>
+                </tr>
+            </table>
+            <a class="prevent-submit btn btn-primary  btn-sm btn-block" href="">View All RFQ</a>
+          </div>
+        </div>
+      
+        <div class="col-md-7">
+          <h5>LAST 10 RECORDS</h5>
+          <hr>
+          <div class="card card-body">
+            <table class="table table-sm">
+              <tr>
+                <th>SPDM ID</th>
+                <th>Received Date</th>
+                <th>Status</th>
+                <th>Update</th>
+                <th>Age</th>
+              </tr>
+                <tr>
+                  <td>Null</td>
+                  <td>Oct. 23, 2021</td>
+                  <td>Extend Material</td>
+                  <td><a class="btn btn-sm btn-info" href="/update_order/3/">Update</a></td>
+                </tr>
+              
+                <tr>
+                  <td>1030576</td>
+                  <td>Oct. 23, 2021</td>
+                  <td>Extend Material</td>
+                  <td><a class="btn btn-sm btn-info" href="/update_order/3/">Update</a></td>
+                </tr>
+              
+                <tr>
+                  <td>1030576</td>
+                  <td>Oct. 23, 2021</td>
+                  <td>Extend Material</td>
+                  <td><a class="btn btn-sm btn-info" href="/update_order/3/">Update</a></td>
+                </tr>
+              
+                <tr>
+                  <td>1030576</td>
+                  <td>Oct. 23, 2021</td>
+                  <td>Extend Material</td>
+                  <td><a class="btn btn-sm btn-info" href="/update_order/3/">Update</a></td>
+                </tr>
+      
+                <tr>
+                  <td>1030576</td>
+                  <td>Oct. 23, 2021</td>
+                  <td>Extend Material</td>
+                  <td><a class="btn btn-sm btn-info" href="/update_order/3/">Update</a></td>
+                </tr>
+            </table>
+            <a class="prevent-submit btn btn-primary  btn-sm btn-block" href="">View All Records</a>
+          </div>
+        </div>
+      
+      </div>
+  </section>
+
+  <script src="script.js"></script>
+  
+</body>
+
+<script src="/InnovationProject/sidebar/Responsive Sidebar menu/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>
